@@ -2,7 +2,9 @@ export default class ObjectValidator {
   validators = {};
 
   shape(fields) {
-    Object.keys(fields).map((key) => this.validators[key] = fields[key]);
+    Object.keys(fields).forEach(key => {
+      this.validators[key] = fields[key];
+    });
     return this;
   }
 

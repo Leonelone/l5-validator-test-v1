@@ -7,13 +7,13 @@ export default class NumberValidator {
   }
 
   even() {
-    const validator = (value) => value %2 === 0;
+    const validator = (value) => value % 2 === 0;
     this.validators.push(validator);
     return this;
   }
 
   odd() {
-    const validator = (value) => value %2 !== 0;
+    const validator = (value) => value % 2 !== 0;
     this.validators.push(validator);
     return this;
   }
