@@ -1,6 +1,6 @@
-import NumberValidator from "./NumberSchema.js";
-import ArrayValidator from "./ArraySchema.js";
-import ObjectValidator from "./ObjectSchema.js";
+import NumberValidator from './NumberSchema.js';
+import ArrayValidator from './ArraySchema.js';
+import ObjectValidator from './ObjectSchema.js';
 
 export default class Validator {
   number() {
@@ -14,4 +14,4 @@ export default class Validator {
   object() {
     return new ObjectValidator();
   }
-};
+}
