@@ -3,15 +3,15 @@ import ArrayValidator from './ArraySchema.js';
 import ObjectValidator from './ObjectSchema.js';
 
 export default class Validator {
-  number() {
+  static number() {
     return new NumberValidator();
   }
 
-  array() {
+  static array() {
     return new ArrayValidator();
   }
 
-  object() {
+  static object() {
     return new ObjectValidator();
   }
 }
